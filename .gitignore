@@ -63,3 +63,11 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+#WebApi
+WebApi/StocktakerWebApi/bin/
+WebApi/StocktakerWebApi/obj/
+WebApi/Model/bin/
+WebApi/Model/obj/
+*.suo
+WebApi/.vs/

@@ -1,0 +1,37 @@
+﻿@model StocktakerWebApi.Models.GrouppingModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Generowanie pliku inwentaryzacji</h2>
+
+<div>
+    <form  role="form" id="form1" action="/Groupping/GetFile" method="post" enctype="multipart/form-data">
+        <div class="panel-body">
+            <div class="form-horizontal">
+                <div class="Legend-div">
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Sklep</label>
+                        <div class="col-sm-4">
+                            @Html.DropDownListFor(model => model.ShopCode, (from structure in Model.ShopList select new SelectListItem { Text = string.Format("{1}  {0}",structure.Description,structure.Code), Value = structure.Code }).ToList(), "", new { @class = "chosen-select", style = "width:350px;", @required = "true", @number = "true" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Data</label>
+                        <div class="col-sm-4">
+                            <input type="date" name="Date" id="Date" value="@DateTime.Now.ToShortDateString()"/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+      </div>
+        <button class="btn btn-primary " type="submit">
+                                <i class="fa fa-check"></i>&nbsp;Generuj
+                            </button>
+    </form>
+</div>
+

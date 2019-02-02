@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Stocktaker</string>
+
+    <string name="action_new_scan">Skanowanie</string>
+    <string name="action_manage_scanned_data">Zapisane dane</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="action_update">Aktualizacja danych</string>
+    <string name="action_webapi">Web API</string>
+	<string name="action_webapi_message">Błędny adres serwisu WebAPI. Sprawdź jego poprawność w menu opcji.</string>
+
+    <string name="title_activity_settings">Ustawienia</string>
+    <string name="title_activity_scan">Skanowanie</string>
+    <string name="title_activity_signature">Podpis</string>
+    <string name="title_activity_update">Aktualizuj</string>
+
+    <string name="btn_scan">Skanuj</string>
+    <string name="btn_save_scan">Zapisz</string>
+    <string name="btn_save_signature">Podpisz</string>
+	<string name="btn_srecognize_employee">Rozpoznaj pracownika</string>
+
+    <string name="dialog_save_scan_title">Podaj znawę skanowania</string>
+    <string name="dialog_save_scan_btn_positive">Zapisz</string>
+    <string name="dialog_save_scan_brn_negative">Anuluj</string>
+
+    <string name="dialog_set_quantity_title">Podaj ilość</string>
+    <string name="dialog_set_quantity_btn_set_quantity">Ustaw</string>
+
+    <string name="main_list_view_context_menu_recognize_products">Rozpoznaj produkty</string>
+    <string name="main_list_view_context_menu_stocktaking">Wyślij</string>
+    <string name="main_list_view_context_menu_delete_scan">Usuń skanowanie</string>
+    <string name="main_list_view_context_menu_delete_element">Usuń element</string>
+    <string name="main_list_view_context_menu_add_element_to_scan">Dodaj kod</string>
+
+    <string name="dialog_add_code_title">Wpisz kod</string>
+    <string name="dialog_add_code_btn_positive">Zapisz</string>
+    <string name="dialog_add_code_brn_negative">Anuluj</string>
+
+    <string name="main_activity_message_save_validation_code">Wprowadzony kod powinien składać się przynajmniej z pięciu znaków.</string>
+    <string name="main_activity_message_save_validation_try_to_add_again">Spróbuj dodać ponownie.</string>
+	<string name="webapi_finishing_finishinginprocess">Trwa wysyłanie skanowania</string>
+
+    <string name="scan_activity_message_scan_result">Brak rezultatu skanowania</string>
+    <string name="scan_activity_message_save_validation_name">Nazwa skanowania powinna składać się przynajmniej z pięciu znaków.</string>
+    <string name="scan_activity_message_save_validation_items">Lista zeskanowanych produktów nie może być pusta.</string>
+    <string name="scan_activity_message_save_validation_try_to_save_again">Spróbuj zapisać ponownie.</string>
+    <string name="scan_activity_list_view_context_menu_delete_code">Usuń kod</string>
+    <string name="webapi_recognizeproducts_recognizinginprogress">Trwa rozpoznawanie produktów</string>
+    <string name="webapi_recognizeemployee_recognizinginprogress">Trwa rozpoznawanie pracownika</string>
+    <string name="scan_activity_product_not_recognized">Nie rozpoznano produktu</string>
+	<string name="scan_activity_employee_not_recognized">Nie rozpoznano pracownika</string>
+	<string name="scan_activity_employee_recognized">Rozpoznano pracownika</string>
+
+    <string name="update_activity_chk_update_roles">Role użytkowników</string>
+    <string name="update_activity_chk_update_locations">Lokalizacje / Sklepy</string>
+    <string name="update_activity_chk_update_codeproductmap">Mapa kodów i produktów</string>
+    <string name="update_activity_btn_update">Aktualizuj</string>
+    <string name="webapi_getting_offline_data">Trwa pobieranie danych</string>
+
+    <string name="error_message_webapi">Wystąpił problem z dostępem do serwisu Web API. Sprawdź swoje połączenie z internetem oraz konfigurację VPN. Jeżeli problem nadal występuje skontaktuj się z działem IT.</string>
+    <string name="error_message_database">Wystąpił problem z lokalną bazą danych. Wykonaj operację ponownie. W razie niepowodzenia skontaktuj się z działem IT.</string>
+    <string name="error_message_database_products_not_recognized">Korzystając z lokalnej bazy danych, nie rozpoznano produktów. Przełącz się w tryb online i zaaktualizuj mapę produktów i kodów lub rozpoznawaj produkty w trybie online.</string>
+
+</resources>

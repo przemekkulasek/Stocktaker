@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="pl.me.inwentaryzacja.activities.UpdateActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <CheckBox
+            android:id="@+id/chkUpdateRoles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false">
+        </CheckBox>
+        <TextView
+            android:text="@string/update_activity_chk_update_roles" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="160dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <CheckBox
+            android:id="@+id/chkUpdateLocations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false">
+        </CheckBox>
+        <TextView android:text="@string/update_activity_chk_update_locations" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="160dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <CheckBox
+            android:id="@+id/chkUpdateCodeProductMap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false">
+        </CheckBox>
+        <TextView
+            android:text="@string/update_activity_chk_update_codeproductmap" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="160dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:text="@string/update_activity_btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

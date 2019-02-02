@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:key="userDescription"
+        android:title="Dane użytkownika">
+        <EditTextPreference android:title="Kod Pracownika"
+            android:key="employeeCode"
+            android:summary="Proszę podać numer kadrowy"
+            android:inputType="number">
+        </EditTextPreference>
+
+        <ListPreference android:title="Rola użytkownika"
+            android:summary="Wybierz rolę użytkownika, która identyfikuje typ skanowania"
+            android:key="userRole"/>
+
+        <ListPreference android:title="Lokalizacja"
+            android:summary="Wybierz lokalizację, która identyfikuje miejsce przeprowadzanego skanowania (np. sklep)"
+            android:key="location"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="scanningPreferences"
+        android:title="Preferencje skanowania">
+        <CheckBoxPreference
+            android:key="zxing_preferences_bulk_mode"
+            android:title="Skanowanie Seryjne"
+            android:summary="Automatyczne włączanie skanera bez konieczności użycia przycisku SKANUJ"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="recognizeProductsDirectly"
+            android:title="Rozpoznawanie produktów"
+            android:summary="Rozpoznawanie produktów bezpośrednio po skanowaniu"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="recognizeEmployee"
+            android:title="Rozpoznawanie Pracownika"
+            android:summary="Rozpoznawanie poprzez skanowanie kodu"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="adjustQuantity"
+            android:title="Wprowadzaj ilości"
+            android:summary="Zmieniaj ilość zeskanowanego produktu, aby przyśpieszyć pracę"
+            android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:key="adjustQuantityMaxValue"
+            android:title="Maksymalna ilość sztuk"
+            android:summary="Maksymalna ilość sztuk, jaką użytkownik może wprowadzić podczas skanowania produktu"
+            android:defaultValue="10"
+            android:inputType="number"/>
+
+        <CheckBoxPreference
+            android:key="useSignOff"
+            android:title="Funkcja Podpisu"
+            android:summary="Rysowanie podpisu na ekranie"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="netPreferences"
+        android:title="Funkcje sieciowe">
+        <CheckBoxPreference
+            android:key="offlineMode"
+            android:title="Tryb Offline"
+            android:summary="Pracuj w trybie offline"
+            android:defaultValue="false"/>
+
+        <EditTextPreference android:title="Webservice"
+            android:key="webServiceAddress"
+            android:summary="Adres Web Serwisu"
+            android:inputType="textUri"
+            android:defaultValue="http://192.168.250.88:266/">
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="additionalFeaturesPreferences"
+        android:title="Funkcje dodatkowe">
+
+        <SwitchPreference
+            android:key="frontLight"
+            android:title="Doświetlanie skanowania"
+            android:summary="Użyj lampy błyskowej, aby doświetlić skanowany kod"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="zxing_preferences_play_beep"
+            android:title="Dźwięk"
+            android:summary="Włącz dźwięk sygnalizujący poprawne zeskanowanie kodu"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="zxing_preferences_vibrate"
+            android:title="Wibracje"
+            android:summary="Włącz wibracje sygnalizujące poprawne zeskanowanie kodu"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
