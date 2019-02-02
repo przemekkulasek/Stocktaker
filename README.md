@@ -1,0 +1,2 @@
+# Stocktaker
+Stocktaker - barcode scanner
